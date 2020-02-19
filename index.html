@@ -9,6 +9,9 @@
 			a, a:visited {text-decoration: none;color: black;}
 			a:hover, a:active {text-decoration: underline;color: #3283A8;}
 			img {border-radius: 5px;}
+
+			.control:checked ~ .APIs, #APIs:checked ~ .APIs {border: 0; clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto;}
+			.control:not(:checked) ~ .APIs, #APIs:not(:checked) ~ .APIs {border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px;}
 		</style>
 	</head>
 	<body>
@@ -22,7 +25,7 @@
 						<div class="card" style="border-radius: 5px;text-align:center">
 							<img class="card-img-top" src="images/FMS5.jpg" alt="Card image cap"><hr>
 							<div class="card-body">
-								<div class="card-title">FMS5</div>
+								<div class="card-text">FMS5</div>
 							</div>
 						</div>
 					</a>
@@ -32,7 +35,7 @@
 						<div class="card" style="border-radius: 5px;text-align:center">
 							<img class="card-img-top" src="images/JOL.jpg" alt="Card image cap"><hr>
 							<div class="card-body">
-								<div class="card-title">Jim's Online</div>
+								<div class="card-text">Jim's Online</div>
 							</div>
 						</div>
 					</a>
@@ -42,47 +45,54 @@
 						<div class="card" style="border-radius: 5px;text-align:center">
 							<img class="card-img-top" src="images/JJW.jpg" alt="Card image cap"><hr>
 							<div class="card-body">
-								<div class="card-title">Jim's Jobs</div>
+								<div class="card-text">Jim's Jobs</div>
 							</div>
 						</div>
 					</a>
 				</div>
 			</div>
-			<div class="row">
-				<h1>APIs</h1>
-			</div>
-			<div class="row">
-				<div class="col-md-4">
-					<a href="https://fms4net-training.jims.net">
-						<div class="card" style="border-radius: 5px;text-align:center">
-							<img class="card-img-top" src="images/FMS4NET.jpg" alt="Card image cap"><hr>
-							<div class="card-body">
-								<div class="card-title">https://fms4net-training.jims.net</div>
-							</div>
-						</div>
-					</a>
+			<br>
+			<input type="checkbox" name="APIs" id="APIs" class="control">
+			<label for="APIs">
+				<div class="btn btn-primary" style="border-radius: 5px">Show APIs</div>
+			</label>
+			<fieldset class="APIs">
+				<div class="row">
+					<h1>APIs</h1>
 				</div>
-				<div class="col-md-4">
-					<a href="https://api-training.jims.net">
-						<div class="card" style="border-radius: 5px;text-align:center">
-							<img class="card-img-top" src="images/API.jpg" alt="Card image cap"><hr>
-							<div class="card-body">
-								<div class="card-title">https://api-training.jims.net</div>
+				<div class="row">
+					<div class="col-md-4">
+						<a href="https://fms4net-training.jims.net">
+							<div class="card" style="border-radius: 5px;text-align:center">
+								<img class="card-img-top" src="images/FMS4NET.jpg" alt="Card image cap"><hr>
+								<div class="card-body">
+									<div class="card-text">https://fms4net-training.jims.net</div>
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
-				<div class="col-md-4">
-					<a href="https://id-training.jims.net">
-						<div class="card" style="border-radius: 5px;text-align:center">
-							<img class="card-img-top" src="images/ID.jpg" alt="Card image cap"><hr>
-							<div class="card-body">
-								<div class="card-title">https://id-training.jims.net</div>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://api-training.jims.net">
+							<div class="card" style="border-radius: 5px;text-align:center">
+								<img class="card-img-top" src="images/API.jpg" alt="Card image cap"><hr>
+								<div class="card-body">
+									<div class="card-text">https://api-training.jims.net</div>
+								</div>
 							</div>
-						</div>
-					</a>
+						</a>
+					</div>
+					<div class="col-md-4">
+						<a href="https://id-training.jims.net">
+							<div class="card" style="border-radius: 5px;text-align:center">
+								<img class="card-img-top" src="images/ID.jpg" alt="Card image cap"><hr>
+								<div class="card-body">
+									<div class="card-text">https://id-training.jims.net</div>
+								</div>
+							</div>
+						</a>
+					</div>
 				</div>
-			</div>
+			</fieldset>
 		</div>
 	</body>
 </html>
